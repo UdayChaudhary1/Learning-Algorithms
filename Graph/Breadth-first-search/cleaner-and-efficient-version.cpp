@@ -39,10 +39,10 @@ int main() {
 
     // Define graph adjacency list
     graph[0] = {1, 2};
-    graph[1] = {2, 3};
-    graph[2] = {};
-    graph[3] = {4};
-    graph[4] = {};
+    graph[1] = {0, 2, 3};
+    graph[2] = {0, 1};
+    graph[3] = {1, 4};
+    graph[4] = {3};
 
     // Perform BFS
     bfs(graph, traversalOrder, visited);
