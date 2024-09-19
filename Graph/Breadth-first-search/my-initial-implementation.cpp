@@ -45,11 +45,11 @@ int main(){
 		nodes.push_back(i);
 	}
 
-	graph[0] = {1,2};
-	graph[1] = {2,3};
-	graph[2] = {};
-	graph[3] = {4};
-	graph[4] = {};
+	graph[0] = {1, 2};
+	graph[1] = {0, 2, 3};
+	graph[2] = {0, 1};
+	graph[3] = {1, 4};
+	graph[4] = {3};
 
 	// other way that does not need to mention the size of the vector
 	// graph.push_back({1, 2});    // This adds a vector {1, 2} to graph[0]
